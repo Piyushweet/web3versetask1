@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Word to PDF Conversion</title>
+    <!-- Include Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading">Word to PDF Conversion</h1>
+        <div id="message"></div>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <div class="form-group" id="boxBorder">
+                <label for="file">Choose a Word file (.docx)</label>
+                <input type="file" class="form-control-file" id="file" name="file">
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="alertMessage()">Convert to PDF</button>
+        </form>
+    </div>
+
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
+    <script src="script.js"></script>
+</body>
+
+</html>
